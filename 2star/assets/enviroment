@@ -1,0 +1,16 @@
+class EnvironmentTiles {
+  constructor(sheet) {
+    this.sheet = sheet;
+    this.ts = 16;
+  }
+
+  drawGrass(x, y) {
+    
+    image(this.sheet, x, y, 40, 40, 0, 0, this.ts, this.ts);
+  }
+
+  drawStone(x, y) {
+    
+    image(this.sheet, x, y, 40, 40, 16, 0, this.ts, this.ts);
+  }
+}
